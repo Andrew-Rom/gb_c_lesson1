@@ -21,12 +21,12 @@ else
     
     for (int i = 0; i < n; i++)
     {
-    if (numbers[i] % 2 == 0)
-        {
-            evenNumbers = evenNumbers + numbers[i].ToString() + ", "; 
-        }
+        if (numbers[i] % 2 == 0)
+            {
+                evenNumbers = evenNumbers + numbers[i].ToString() + ", "; 
+            }
     }
 
-    evenNumbers = evenNumbers.Remove(evenNumbers.Length-2);
+    evenNumbers = evenNumbers.Remove(evenNumbers.Length-2); // Удаление лишней запятой
     Console.WriteLine(evenNumbers);
 }
